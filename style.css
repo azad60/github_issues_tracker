@@ -354,8 +354,19 @@ body{
   font-weight: 700;
   color: #1f2937FF;
 }
-.poup_section p{}
-.status_btn{}
+.poup_section p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #64748bFF;
+  margin-bottom: 27px;
+}
+.status_btn{
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
 .status_btn button{
   padding: 6px 8px;
   background: #00a96eFF;
@@ -365,19 +376,87 @@ body{
   font-weight: 500;
   border: none;
 }
-.status_btn p{}
-.poup_section_btns{}
-.poup_bug_btn{}
-.poup_help_btn{}
-.priority{}
-.priority_left{}
-.priority_left p{}
-.priority_left h3{}
-.priority_right{}
-.priority_right p{}
-.priority_right button{}
-.close_btn{}
-.close_btn button{}
+.status_btn p{
+  font-size: 12px;
+  font-weight: 400;
+  color: #64748bFF;
+}
+.poup_section_btns{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 24px 0;
+}
+.poup_bug_btn{
+  padding: 8px 16px;
+  border-radius: 100px;
+  background: #feececFF;
+  border: 1px solid #fecacaFF;
+  font-size: 12px;
+  font-weight: 500;
+  color: #ef4444FF;
+}
+.poup_help_btn{
+  padding: 8px 16px;
+  border-radius: 100px;
+  background: #fff8dbFF;
+  border: 1px solid #fde68aFF;
+  font-size: 12px;
+  font-weight: 500;
+  color: #d97706FF;
+}
+.priority{
+  padding: 16px;
+  background: #f8fafcFF;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.priority_left{
+  width: 50%;
+}
+.priority_left p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #64748bFF;
+}
+.priority_left h3{
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937FF;
+}
+.priority_right{
+  width: 50%;
+}
+.priority_right p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #64748bFF;
+}
+.priority_right button{
+  padding: 8px 16px;
+  border-radius: 100px;
+  background: #ef4444FF;
+  border: 1px solid #fecacaFF;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+.close_btn{
+  margin: 24px 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.close_btn button{
+  background: #4a00ffFF;
+  border-radius: 4px;
+  color: #fff;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+}
 
 
 @media (max-width: 768px) {
