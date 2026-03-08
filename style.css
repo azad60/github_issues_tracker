@@ -343,6 +343,43 @@ body{
   font-weight: 400;
 }
 
+.poup_section{
+  max-width: 636px;
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.poup_section h2{
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937FF;
+}
+.poup_section p{}
+.status_btn{}
+.status_btn button{
+  padding: 6px 8px;
+  background: #00a96eFF;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+}
+.status_btn p{}
+.poup_section_btns{}
+.poup_bug_btn{}
+.poup_help_btn{}
+.priority{}
+.priority_left{}
+.priority_left p{}
+.priority_left h3{}
+.priority_right{}
+.priority_right p{}
+.priority_right button{}
+.close_btn{}
+.close_btn button{}
+
+
 @media (max-width: 768px) {
   .nav_header>nav{
   gap: 16px;
