@@ -292,6 +292,7 @@ body{
   color: #ef4444FF;
   border-radius: 15px;
   border: none;
+  text-transform: uppercase;
 }
 .issues_items_contents{
   margin-top: 12px;
