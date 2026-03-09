@@ -7,10 +7,19 @@ let all_filter_btn = document.getElementById('all_filter_btn');
 let open_filter_btn = document.getElementById('open_filter_btn');
 let close_filter_btn = document.getElementById('close_filter_btn');
 
+// overlay design here 
+let overlay_main = document.getElementById('overlay_main')
+
+// close btn here 
+let closes_btn = document.getElementById('closes_btn')
+
+// popu section design here 
+let poups_section =document.getElementById('poups_section')
+
 function loadItems(){
 fetch("https://phi-lab-server.vercel.app/api/v1/lab/issues").then((res)=>res.json()).then((items)=>{
   console.log(items);
-  // document.getElementById("total_issues").innerText = items.length;
+  document.getElementById("total_issues").innerText = items.data.length;
 
   items.data.forEach(item => {
     console.log(item);
@@ -44,13 +53,6 @@ fetch("https://phi-lab-server.vercel.app/api/v1/lab/issues").then((res)=>res.jso
 loadItems();
 
 
-// dainaymic issues counts 
-function issuesCounts(){
-  total_issues.innerText = issues_items_main.children.length
-}
-
-issuesCounts()
-
 // toggle stye here 
 function toggleStyle(id){
   all_filter_btn.classList.remove('active')
@@ -60,3 +62,28 @@ function toggleStyle(id){
   const selected = document.getElementById(id)
   curentStatus = id
   selected.classList.add('active')}
+
+  // add event litisher here 
+  issues_items_main.addEventListener('click', function(event){
+    console.log(event)
+    overlay_main.classList.remove('hidden');
+  })
+
+  // close overlay here 
+  function closeBtn(){
+    overlay_main.classList.add('hidden');
+  }
+
+
+function login(){
+
+  let username = document.getElementById("username").value;
+  let password = document.getElementById("password").value;
+
+  if(username === "admin" && password === "admin123"){
+      window.location.href = "./home.html";
+  }else{
+      alert("Invalid Login info");
+  }
+
+}

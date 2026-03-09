@@ -17,18 +17,18 @@
       <h2>Github Issues Tracker</h2>
       <h3>sign in to manage your issues</h3>
     </div>
-    <form class="form_content" action="#">
+    <form class="form_content" action="./index.html">
       <div>
         <label for="Username">Username</label>
-        <input class="form_content_input" id="Username" type="text" placeholder="Enter Username">
+        <input class="form_content_input" id="username" type="text" placeholder="Enter Username">
         <p class="default_text">Default: admin</p>
       </div>
       <div>
         <label for="">Password</label>
-        <input class="form_content_input" type="text" placeholder="Enter Username">
+        <input id="password" class="form_content_input" type="password" placeholder="Enter Username">
         <p class="default_text">Default: admin123</p>
       </div>
-      <button class="sign_btn">Sign In</button>
+      <button type="button" onclick="login()" class="sign_btn">Sign In</button>
     </form>
     <div class="bottom_stroke"><span></span>OR<span></span></div>
     <div class="box_bottom">
@@ -40,5 +40,7 @@
     </div>
   </div>
   </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
